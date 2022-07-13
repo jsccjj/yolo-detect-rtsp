@@ -7,7 +7,7 @@ Stream Yolo inference results via RTSP
 
 The prerequisites for this piece of software to function are the presences of Ultralytics' Yolov3 (support for Yolov5 will be added soon), ffmpeg (https://ffmpeg.org/), and rtsp-simple-server (https://github.com/aler9/rtsp-simple-server). Make sure you have both the prerequisites in your environments. Especially should rtsp-simple-server be initiated before using "detect-v3-rtsp.py". rtsp-simple-server acts as a RTSP publisher to publish and re-broadcast. By default, port 8554 is used unless changed.
 
-To use "detect-v3-rtsp.py", download it to Yolov3's root folder.
+To use "detect-v3-rtsp.py", download it (here: https://github.com/jsccjj/yolo-detect-rtsp/raw/main/detect-v3-rtsp.py) to the Yolov3's root folder.
 
 "detect-v3-rtsp.py" inherits all the flags from "detect.py" and has an additional flag "--rtsp-out". To turn on RTSP output, add "--rtsp-out" like this:
 
