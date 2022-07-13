@@ -107,7 +107,7 @@ def run(weights=ROOT / 'yolov3.pt',  # model.pt path(s)
         wxh = str(w)+"x"+str(h)+" "
         cap.release()
         commands = (
-            "ffmpeg -re -f rawvideo -pix_fmt rgb24 " +
+            "ffmpeg -re -f rawvideo -pix_fmt bgr24 " +
             "-s " + wxh + "-i pipe:0 -pix_fmt yuv420p " +
             "-vcodec libx264 -profile:v main " +
             "-preset ultrafast " +
